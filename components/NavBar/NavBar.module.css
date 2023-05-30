@@ -1,0 +1,33 @@
+.nav {
+  @apply w-full;
+}
+.navContainer {
+  @apply flex  px-8 py-6 items-center justify-center;
+}
+
+.initials {
+  font-weight: bolder;
+  background: -webkit-linear-gradient(rgb(0, 255, 164), rgb(166, 104, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.navItem {
+  @apply mx-16;
+  transition: all 250ms ease;
+}
+.navItem:hover {
+  transform: translateY(-3px) scale(1.2);
+  transition: all 250ms ease;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(rgb(0, 255, 164), rgb(166, 104, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active {
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, rgb(0, 255, 164), rgb(166, 104, 255));
+  border-image-slice: 1;
+}
